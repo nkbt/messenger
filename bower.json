@@ -1,8 +1,14 @@
 {
   "name": "messenger",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Messenger library, for providing messages to the user.",
-  "main": "js/messenger.js",
+  "main": [
+    "js/messenger.js",
+    "html/error.html",
+    "html/message.html",
+    "html/progress.html",
+    "html/template.html"
+  ],
   "private": true,
   "ignore": [
     "**/.*",
