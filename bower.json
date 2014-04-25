@@ -1,6 +1,6 @@
 {
   "name": "messenger",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Messenger library, for providing messages to the user.",
   "main": [
     "js/messenger.js",
@@ -18,10 +18,10 @@
   ],
   "dependencies": {
     "core": "git@git.pb:js-library/core.git",
-    "underscore": "~1.6.0",
-    "jquery": "~2.1.0",
-    "requirejs": "~2.1.11",
-    "requirejs-text": "~2.0.12"
+    "underscore": "*",
+    "jquery": "*",
+    "requirejs": "*",
+    "requirejs-text": "*"
   },
   "devDependencies": {
     "chai": "~1.9.1",

@@ -6,7 +6,7 @@ require.config({
 		underscore: '../bower_components/underscore/underscore',
 		dom: '../bower_components/jquery/dist/jquery',
 
-		app: '../bower_components/core/js/app',
+		'lib/app': '../bower_components/core/js/app',
 
 		'messenger/html': '../html',
 

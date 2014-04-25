@@ -1,5 +1,5 @@
 define([
-	'module', 'dom', 'underscore', 'app',
+	'module', 'dom', 'underscore', 'lib/app',
 	'txt!messenger/html/template.html',
 	'txt!messenger/html/error.html',
 	'txt!messenger/html/message.html',

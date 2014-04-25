@@ -1,4 +1,4 @@
-define(['app', 'messenger'], function (app, messenger) {
+define(['lib/app', 'messenger'], function (app, messenger) {
 	"use strict";
 
 	describe('messenger', function () {
