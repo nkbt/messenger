@@ -17,7 +17,7 @@
 		"test"
 	],
 	"dependencies": {
-		"core": "git@git.pb:js-library/core.git",
+		"core": "git@github.com:nkbt/js-core.git",
 		"jquery": "~2.1.0",
 		"underscore": "~1.6.0",
 		"requirejs": "~2.1.11",
