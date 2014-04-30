@@ -1,6 +1,6 @@
 {
 	"name": "messenger",
-	"version": "0.3.0",
+	"version": "0.3.1",
 	"description": "Messenger library, for providing messages to the user.",
 	"main": [
 		"js/messenger.js",
