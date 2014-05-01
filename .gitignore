@@ -1,0 +1,4 @@
+syntax: glob
+bower
+node_modules
+.idea
