@@ -1,4 +1,4 @@
-bower-bolierplate
+bower-template
 =================
 
-Boilerplate to be used to create Bower modules
+Template to be used to create Bower modules
