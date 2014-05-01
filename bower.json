@@ -1,0 +1,33 @@
+{
+	"name": "domainSpinner",
+	"version": "0.0.1",
+	"description": "PeopleBrowsr Domain spinner",
+	"author": {
+		"name": "Nik Butenko",
+		"email": "nik@butenko.me"
+	},
+	"main": [
+		"js/domainSpinner.js",
+		"html/container.html",
+		"html/item.html"
+	],
+	"private": true,
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower",
+		"test"
+	],
+	"dependencies": {
+		"core": "git@github.com:nkbt/js-core.git",
+		"jquery": "~2.1.0",
+		"underscore": "~1.6.0",
+		"requirejs": "~2.1.11",
+		"requirejs-text": "~2.0.12",
+		"require-css": "~0.1.2"
+	},
+	"devDependencies": {
+		"chai": "~1.9.1",
+		"mocha": "~1.18.2"
+	}
+}
