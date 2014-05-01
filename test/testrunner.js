@@ -11,10 +11,8 @@
 			mocha: '../bower/mocha/mocha',
 			chai: '../bower/chai/chai',
 
-			'domainSpinner': '../js/domainSpinner',
-			'lib/app': '../bower/core/js/app',
-
-			'domainSpinner/html': '../html'
+			'myModule': '../js/myModule',
+			'myModule/html': '../html'
 		},
 		shim: {
 			underscore: {
@@ -44,7 +42,7 @@
 		mocha.ui('bdd');
 		window.expect = chai.expect;
 		require([
-			'test/lib/domainSpinner'
+			'test/lib/myModule'
 		], function () {
 			if (window.mochaPhantomJS) {
 				mochaPhantomJS.run();

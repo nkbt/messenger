@@ -1,7 +1,7 @@
 {
-	"name": "domainSpinner",
+	"name": "bower-template",
 	"version": "0.0.1",
-	"description": "PeopleBrowsr Domain spinner",
+	"description": "bower-template",
 	"private": true,
 	"author": {
 		"name": "Nik Butenko",
@@ -19,7 +19,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git@git.pb:js/domain-spinner.git"
+		"url": "git@github.com:nkbt/bower-template.git"
 	},
 	"dependencies": {},
 	"devDependencies": {

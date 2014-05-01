@@ -1,15 +1,14 @@
 {
-	"name": "domainSpinner",
+	"name": "bower-template",
 	"version": "0.0.1",
-	"description": "PeopleBrowsr Domain spinner",
+	"description": "bower-template",
 	"author": {
 		"name": "Nik Butenko",
 		"email": "nik@butenko.me"
 	},
 	"main": [
-		"js/domainSpinner.js",
-		"html/container.html",
-		"html/item.html"
+		"js/myModule.js",
+		"html/container.html"
 	],
 	"private": true,
 	"ignore": [
@@ -19,7 +18,6 @@
 		"test"
 	],
 	"dependencies": {
-		"core": "git@github.com:nkbt/js-core.git",
 		"jquery": "~2.1.0",
 		"underscore": "~1.6.0",
 		"requirejs": "~2.1.11",

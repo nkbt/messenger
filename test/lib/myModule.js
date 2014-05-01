@@ -1,12 +1,12 @@
-define(['lib/app', 'module'], function (app, domainSpinner) {
+define(['myModule'], function (myModule) {
 	"use strict";
 
 
-	describe('domainSpinner', function () {
+	describe('myModule', function () {
 
 
-		it('should check true is true', function () {
-			expect(true).to.be.true;
+		it('should return containerTemplate', function () {
+			expect(myModule.containerTemplate).to.be.equal('<div class="myModule-container"></div>\n');
 		});
 
 
