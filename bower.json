@@ -2,6 +2,10 @@
 	"name": "messenger",
 	"version": "0.3.2",
 	"description": "Messenger library, for providing messages to the user.",
+	"author": {
+		"name": "Nik Butenko",
+		"email": "nik@butenko.me"
+	},
 	"main": [
 		"js/messenger.js",
 		"html/error.html",
@@ -13,7 +17,7 @@
 	"ignore": [
 		"**/.*",
 		"node_modules",
-		"bower_components",
+		"bower",
 		"test"
 	],
 	"dependencies": {
