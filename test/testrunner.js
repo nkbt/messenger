@@ -1,55 +1,56 @@
-"use strict";
+(function () {
+	"use strict";
 
-require.config({
-	baseUrl: '../js',
-	paths: {
-		underscore: '../bower_components/underscore/underscore',
-		dom: '../bower_components/jquery/dist/jquery',
+	require.config({
+		baseUrl: '../js',
+		paths: {
+			underscore: '../bower/underscore/underscore',
+			dom: '../bower/jquery/dist/jquery',
 
-		'lib/app': '../bower_components/core/js/app',
+			test: '../test',
+			mocha: '../bower/mocha/mocha',
+			chai: '../bower/chai/chai',
 
-		'messenger/html': '../html',
-
-		test: '../test',
-		mocha: '../bower_components/mocha/mocha',
-		chai: '../bower_components/chai/chai'
-	},
-	shim: {
-		underscore: {
-			exports: '_'
+			'myModule': '../js/myModule',
+			'myModule/html': '../html'
 		},
-		dom: {
-			exports: 'jQuery'
+		shim: {
+			underscore: {
+				exports: '_'
+			},
+			dom: {
+				exports: 'jQuery'
+			},
+			mocha: {
+				exports: 'mocha'
+			},
+			chai: {
+				exports: 'chai'
+			}
 		},
-		mocha: {
-			exports: 'mocha'
-		},
-		chai: {
-			exports: 'chai'
+		map: {
+			'*': {
+				'css': '../bower/require-css/css',
+				'txt': '../bower/requirejs-text/text'
+			}
 		}
-	},
-	map: {
-		'*': {
-			'txt': '../bower_components/requirejs-text/text'
-		}
-	}
-});
-
-// load tests
-require([
-	'mocha', 'chai'
-], function (mocha, chai) {
-	// start the test runner
-	mocha.ui('bdd');
-
-	window.expect = chai.expect;
-
-	// load up the tests
-	require([
-		'test/lib/messenger'
-
-		// add more here...
-	], function () {
-		mocha.run();
 	});
-});
+
+	require([
+		'mocha', 'chai'
+	], function (mocha, chai) {
+		mocha.ui('bdd');
+		window.expect = chai.expect;
+		require([
+			'test/lib/myModule'
+		], function () {
+			if (window.mochaPhantomJS) {
+				mochaPhantomJS.run();
+			} else {
+				mocha.run();
+			}
+		});
+	});
+
+
+})();
