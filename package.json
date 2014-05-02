@@ -1,7 +1,7 @@
 {
-	"name": "bower-template",
-	"version": "0.0.1",
-	"description": "bower-template",
+	"name": "messenger",
+	"version": "0.3.1",
+	"description": "messenger",
 	"private": true,
 	"author": {
 		"name": "Nik Butenko",
@@ -19,7 +19,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git@github.com:nkbt/bower-template.git"
+		"url": "git@github.com:nkbt/messenger.git"
 	},
 	"dependencies": {},
 	"devDependencies": {

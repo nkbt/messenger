@@ -6,13 +6,14 @@
 		paths: {
 			underscore: '../bower/underscore/underscore',
 			dom: '../bower/jquery/dist/jquery',
+			'lib/app': '../bower/core/js/app',
 
 			test: '../test',
 			mocha: '../bower/mocha/mocha',
 			chai: '../bower/chai/chai',
 
-			'myModule': '../js/myModule',
-			'myModule/html': '../html'
+			'messenger': '../js/messenger',
+			'messenger/html': '../html'
 		},
 		shim: {
 			underscore: {
@@ -42,7 +43,7 @@
 		mocha.ui('bdd');
 		window.expect = chai.expect;
 		require([
-			'test/lib/myModule'
+			'test/lib/messenger'
 		], function () {
 			if (window.mochaPhantomJS) {
 				mochaPhantomJS.run();

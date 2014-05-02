@@ -25,7 +25,7 @@ define([
 
 	function show(type, text) {
 		if (!_.findWhere(config.types, type)) {
-			return console.warn('messenger', 'unknown type', type);
+			return null;
 		}
 
 		var $element = app.$root.find('.messenger'),
@@ -121,21 +121,9 @@ define([
 		.on('messenger:show', null, onShow)
 		.on('messenger:progressStop', null, onProgressStop)
 		.on('click', '.messenger .messenger-message', onClick)
-		.on(
-			'mouseover',
-			'.messenger .messenger-message[data-messenger-autohide]',
-			onMouseover
-		)
-		.on(
-			'mouseout',
-			'.messenger .messenger-message[data-messenger-autohide]',
-			onHideDelayed
-		)
-		.on(
-			'messenger:hideDelayed',
-			'.messenger .messenger-message[data-messenger-autohide]',
-			onHideDelayed
-		);
+		.on('mouseover', '.messenger .messenger-message[data-messenger-autohide]', onMouseover)
+		.on('mouseout', '.messenger .messenger-message[data-messenger-autohide]', onHideDelayed)
+		.on('messenger:hideDelayed', '.messenger .messenger-message[data-messenger-autohide]', onHideDelayed);
 
 
 	return config.types;
