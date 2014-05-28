@@ -16,10 +16,6 @@
 		"test": "grunt test",
 		"build": "grunt"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git@github.com:nkbt/messenger.git"
-	},
 	"dependencies": {},
 	"devDependencies": {
 		"grunt": "~0.4.2",

@@ -19,6 +19,10 @@
 		"bower",
 		"test"
 	],
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/nkbt/messenger.git"
+	},
 	"dependencies": {
 		"core": "git://github.com/nkbt/js-core.git",
 		"jquery": "*",
