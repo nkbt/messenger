@@ -1,6 +1,5 @@
 {
 	"name": "messenger",
-	"version": "0.3.4",
 	"description": "Messenger library, for providing messages to the user.",
 	"author": {
 		"name": "Nik Butenko",
@@ -21,7 +20,7 @@
 		"test"
 	],
 	"dependencies": {
-		"core": "https://github.com/nkbt/js-core/archive/master.zip",
+		"core": "git://github.com/nkbt/js-core.git",
 		"jquery": "*",
 		"underscore": "*",
 		"requirejs": "*",
