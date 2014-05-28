@@ -21,14 +21,14 @@
 		"test"
 	],
 	"dependencies": {
-		"core": "nkbt/js-core",
-		"jquery": "~2.1.0",
-		"underscore": "~1.6.0",
-		"requirejs": "~2.1.11",
-		"requirejs-text": "~2.0.12"
+		"core": "https://github.com/nkbt/js-core/archive/master.zip",
+		"jquery": "*",
+		"underscore": "*",
+		"requirejs": "*",
+		"requirejs-text": "*"
 	},
 	"devDependencies": {
-		"chai": "~1.9.1",
-		"mocha": "~1.18.2"
+		"chai": "*",
+		"mocha": "*"
 	}
 }
