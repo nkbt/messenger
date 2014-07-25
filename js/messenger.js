@@ -100,20 +100,20 @@ define([
 	}
 
 	function onHideDelayed(event) {
-		var $message = $(event.target).closest('.messenger-message'),
+		var $message = app.getElement(event, '.messenger-message'),
 			hideTimeout = parseInt(parseInt($message.data('messenger-autohide'), 10) || config.hideTimeout, 10);
 		clearTimer($message);
 		return $message.data('messenger-hideTimeout', window.setTimeout(hider($message), hideTimeout));
 	}
 
 	function onClick(event) {
-		var $message = $(event.target).closest('.messenger-message');
+		var $message = app.getElement(event, '.messenger-message');
 		clearTimer($message);
 		return hide($message);
 	}
 
 	function onMouseover(event) {
-		var $message = $(event.target).closest('.messenger-message');
+		var $message = app.getElement(event, '.messenger-message');
 		return clearTimer($message);
 	}
 
